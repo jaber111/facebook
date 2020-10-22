@@ -12,7 +12,7 @@ import AddIcon from "@material-ui/icons/Add";
 import MessageIcon from "@material-ui/icons/Message";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-export const Header = () => {
+export default function () {
   return (
     <div className="header">
       <div className="header__left">
@@ -43,13 +43,26 @@ export const Header = () => {
         </div>
       </div>
       <div className="header__right">
-        <AccountCircleIcon fontSize="large" />
-        <h5>jaber youssef</h5>
-        <AddIcon fontSize="large" />
-        <MessageIcon fontSize="large" />
-        <NotificationsIcon fontSize="large" />
-        <ExpandMoreIcon fontSize="large" />
+        <div className="header__right__option">
+          <AccountCircleIcon fontSize="large" />
+          <h5>jaber youssef</h5>
+        </div>
+        <div className="header__right__option">
+          <AddIcon fontSize="large" />
+        </div>
+
+        <div className="header__right__option">
+          <MessageIcon fontSize="large" />
+        </div>
+
+        <div className="header__right__option">
+          <NotificationsIcon fontSize="large" />
+        </div>
+
+        <div className="header__right__option">
+          <ExpandMoreIcon fontSize="large" />
+        </div>
       </div>
     </div>
   );
-};
+}

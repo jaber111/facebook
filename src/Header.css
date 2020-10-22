@@ -2,15 +2,17 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid rgb(238, 226, 226);
+  z-index: 2;
 }
 
 .header__left > img {
   height: 50px;
   width: 50px;
+  margin-bottom: 10px;
 }
 .header__left {
   display: flex;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-left: 10px;
 }
 .header__left__input {
@@ -23,11 +25,15 @@
   width: 300px;
   margin-left: 10px;
 }
+
 .header__left__input > input {
   border: none;
   background-color: rgb(209, 209, 209);
   width: 300px;
   height: 30px;
+}
+.header__left__input > input:focus {
+  outline: none;
 }
 
 .header__middle {
@@ -58,5 +64,20 @@
 
 .header__right {
   display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+.header__right__option {
+  margin: 0 20px;
+  display: flex;
   align-items: center;
+}
+
+.header__right__option > .MuiSvgIcon-root {
+  color: gray;
+}
+
+.header__right__option:hover {
+  background-color: rgb(233, 233, 233);
+  border-radius: 40px;
 }

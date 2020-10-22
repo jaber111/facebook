@@ -1,0 +1,25 @@
+.body__top{
+    display: flex;
+}
+.stors {
+  display: block;
+}
+.stors__option {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  height: 30px;
+  width: 300px;
+}
+.stors__option:hover {
+  background-color: rgb(248, 239, 239);
+  border-radius: 10px;
+}
+.stors__option > h3 {
+  margin-left: 20px;
+  color: rgb(65, 62, 62);
+}
+
+.stors__option > .MuiSvgIcon-root {
+  color: gray;
+}
